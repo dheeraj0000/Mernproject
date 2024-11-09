@@ -1,0 +1,82 @@
+create folder in that add two folders frontend and backend 
+
+open backend folder
+
+1)npm init -y 
+2) npm install express
+
+to run node index.js
+
+use postman to check the responses
+
+to install mongoose and mongodb commands 
+npm install mongoose
+npm install mongodb
+
+after completion :
+open package.json file and check for the dependencies
+
+copy connection string of mangodb database  "mongodb+srv://dheeraj:Dheeraj9182@1st.m4cub.mongodb.net/" from website click on 3 dots and copy 
+
+establish a connection to mangodb using mangoosein express js  like add libraries
+
+run the code and check if "connected",message is displayed in the console
+mongoose.connect('mongodb+srv://dheeraj:Dheeraj9182@1st.m4cub.mongodb.net/')
+  .then(() => console.log('Connected!'));
+
+
+
+moviedata
+movie name:string
+actor:string
+actress:string
+release date:date
+rating:float
+
+Schema of databse
+const mongoose = require("mongoose");
+
+const userSchema = new mongoose.Schema({
+    moviename:string,
+    actor:string,
+    actress:string,
+    rating:Number
+});
+
+const Movie = mongoose.model("Movie", userSchema);
+module.exports = Movie;
+
+async if we use the pakka we should use await (async->aqait)	
+write post method in index.js
+
+npm install cors
+
+Frontend 
+
+npm create vite
+
+cd name
+npm run dev
+
+npm install axios
+
+in the src file create components 
+
+
+
+git --version 
+git config user.name
+git config user.email
+git config --global user,name "your email"
+git config --global user.email "yout email@youtdomain.com"
+
+
+
+
+
+
+
+
+
+
+
